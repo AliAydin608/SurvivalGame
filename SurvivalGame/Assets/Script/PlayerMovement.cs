@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate () {
  
         yRot += Input.GetAxis("Mouse X") * mouseSensitivity;
-        //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, yRot, transform.localEulerAngles.z);
+        transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, yRot, transform.localEulerAngles.z);
  
         //isMoving = false;
  
